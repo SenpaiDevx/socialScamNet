@@ -1,0 +1,26 @@
+@baseUrl = http://localhost:5000
+@urlPath = api/v1
+
+###
+PUT {{baseUrl}}/{{urlPath}}/notification/67f5f42ba18150ae224bb2fc
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
+
+{}
+
+###
+DELETE {{baseUrl}}/{{urlPath}}/notification/67f5f42ba18150ae224bb2fc
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
+
+{}
+
+###
+GET {{baseUrl}}/{{urlPath}}/notifications
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
+
+{}

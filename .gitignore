@@ -1,0 +1,6 @@
+node_modules
+.env.develop
+.env
+socialappKeyPair.pem
+swagger.json
+deployment/.terraform

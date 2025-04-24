@@ -1,0 +1,23 @@
+DATABASE_URL=mongodb+srv://socialscam_admin:astre_senpai@socialscam-db.8anstqm.mongodb.net/?retryWrites=true&w=majority&appName=socialScam-db
+JWT_TOKEN=tokinizers_block
+NODE_ENV=development
+SECRET_KEY_ONE=key_1
+SECRET_KEY_TWO=key_2
+CLIENT_URL=http://localhost:5000
+REDIS_HOST=redis://localhost:6379 #redist localhost
+API_URL=http://localhost:5000/api/v1
+CLOUD_NAME=dsgbrmdes
+CLOUD_API_KEY=189926667534293
+CLOUD_API_SECRET=RSEi5XK6HGKP_hkuxz3aHjptzI4
+SENDER_EMAIL=reilly73@ethereal.email
+SENDER_EMAIL_PASSWORD=XXaPrntVB2AShuhfhU
+SENDGRID_API_KEY=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
+SENDGRID_SENDER=
+EC2_URL=http://169.254.169.254/latest/meta-data/instance-id
+CONSOLE_SIGN_IN=https://122007303433.signin.aws.amazon.com/console
+CONSOLE_USR=xianlim
+CONSOLE_PASS=S0c1alScamN3t
+ACCESS_KEY=AKIARY2BTWUEVD4VOVXG
+SECRET_ACCESS_KEY=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
+AMZ_ROOT=cristianempillo.lopez24@gmail.com
+AMZ_PASS=S3npai_24

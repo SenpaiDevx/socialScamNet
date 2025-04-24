@@ -1,0 +1,48 @@
+@baseUrl = http://localhost:5000
+@urlPath = api/v1
+
+###
+POST {{baseUrl}}/{{urlPath}}/post/reaction
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
+
+{
+  "userTo": "67de69bbc5d67212728580ae",
+  "postId": "67eb6c460b8830d4be1da42d",
+  "type": "like",
+  "previousReaction": "",
+  "postReactions": {"like": 1,"love": 0,"happy": 0,"sad": 0,"wow": 0,"angry": 0},
+  "profilePicture": "https://res.cloudinary.com/dsgbrmdes/image/upload/v1741769342/67d14a7cc65d75f34a9dd7e5"
+}
+###
+DELETE {{baseUrl}}/{{urlPath}}/post/reaction/67eb6c3f0b8830d4be1da429/happy/{"like":0,"love":0,"happy":0,"sad":0,"wow":0,"angry":0}
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
+
+{}
+
+
+###
+# get postId
+GET {{baseUrl}}/{{urlPath}}/post/reactions/67eb6c460b8830d4be1da42d
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
+
+###
+#<username-of-logged-in-user>/<postId>
+GET {{baseUrl}}/{{urlPath}}/post/single/reaction/username/Sakamoto/67eb6c460b8830d4be1da42d
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
+
+###
+# <username-of-logged-in-user>
+GET {{baseUrl}}/{{urlPath}}/post/reactions/username/Sakamoto
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
+
+

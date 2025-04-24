@@ -1,0 +1,30 @@
+@baseUrl = http://localhost:5000
+@urlPath = api/v1
+
+###
+POST {{baseUrl}}/{{urlPath}}/post/comment
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
+
+{
+"userTo": "67ee408d63eb2abba8867251",
+"postId": "67ee40da63eb2abba8867258",
+"comment": "NGK! 101 - secret of world is planned!!",
+"profilePicture": "https://res.cloudinary.com/dsgbrmdes/image/upload/v1741769342/67d14a7cc65d75f34a9dd7e5"
+}
+
+
+###
+#<postId>
+GET {{baseUrl}}/{{urlPath}}/post/commentsnames/67eb6c3f0b8830d4be1da429
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
+
+###
+# <postId>/<commentId>
+GET {{baseUrl}}/{{urlPath}}/post/single/comment/67eb6c3f0b8830d4be1da429/67edfd9885c13cb24bab2661
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
